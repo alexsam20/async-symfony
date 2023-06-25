@@ -175,3 +175,4 @@ fabric.properties
 .idea/
 notes.txt
 # End of https://www.toptal.com/developers/gitignore/api/symfony,phpstorm
+/docker-compose.override.yml
