@@ -5,7 +5,7 @@ namespace App\MessageHandler;
 use App\Message\PurchaseConfirmationNotification;
 use Symfony\Component\Messenger\Attribute\AsMessageHandler;
 
-#{AsMessageHandler}
+#[AsMessageHandler]
 class PurchaseConfirmationNotificationHandler
 {
     public function __invoke(PurchaseConfirmationNotification $notification)
