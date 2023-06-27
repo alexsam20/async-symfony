@@ -5,12 +5,11 @@ namespace App\MessageHandler\Event;
 use App\Message\Event\OrderSavedEvent;
 use Mpdf\Mpdf;
 use Symfony\Component\Mailer\MailerInterface;
-//use Symfony\Component\Messenger\Handler\MessageHandlerInterface;
 use Symfony\Component\Messenger\Attribute\AsMessageHandler;
 use Symfony\Component\Mime\Email;
 
 #[AsMessageHandler]
-class OrderSavedEventHandler // implements MessageHandlerInterface
+class OrderSavedEventHandler
 {
 
     public function __construct(private MailerInterface $mailer)
